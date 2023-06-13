@@ -11,12 +11,12 @@ export default function Pizza({ pizza }) {
   const handleShow = () => setShow(true);
 
   return (
-    <div style={{ margin: "100px" }} className="shadow-lg p-3 mb-5 bg-white rounded">
+    <div style={{ margin: "50px" }} className="shadow-lg p-3 mb-5 bg-white rounded">
       <h1>{pizza.name}</h1>
-      <img src={pizza.image} className="img-fluid" style={{ height: "300px", width: "300px" }} onClick={handleShow} />
+      <img src={pizza.image} className="img-fluid" style={{ height: "200px", width: "200px" }} onClick={handleShow} />
 
       <div className="flex-container">
-        <div className="w-100 m-1">
+        <div className="w-100 p-100">
           <p>Variants</p>
           <select
             value={variant}
